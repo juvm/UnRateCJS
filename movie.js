@@ -1,5 +1,5 @@
 
-const APILINK = `http://127.0.0.1:8080/api/v1/reviews/`;
+const APILINK = `http://unratemovies.azurewebsites.net/api/v1/reviews/`;
 //Here, instead of using themoviedb api, we're using the api that we made for the backend
 
 const url = new URL(location.href);   //URL object to extract parameters
@@ -256,8 +256,8 @@ div_new.innerHTML = `
                 </div>
                 <div class="input-conts">
                     <span class="long-cont">YOUR REVIEW</span>
-                    <input type='text' id='new_headline' value='' placeholder="Write a headline for your review here">
-                    <textarea id='new_review' value='' placeholder="Write your review here - in any language" rows="10"></textarea>
+                    <input type='text' id='new_headline' value='' placeholder="Write a headline for your review here" required>
+                    <textarea id='new_review' value='' placeholder="Write your review here - in any language" rows="10" requires></textarea>
                 </div>
                 <div class="input-conts">
                     <span class="long-cont">Username</span>
